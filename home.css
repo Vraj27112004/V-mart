@@ -1,0 +1,207 @@
+
+ .end{
+  color: #fff;
+}
+   /* Color Variables */
+:root {
+  --primary: #4f8cff;
+  --accent: #ffb300;
+  --background: #181a20;
+  --surface: #23262f;
+  --text: #fff;
+  --text-muted: #b0b3b8;
+  --success: #00c896;
+  --danger: #ff4d4f;
+}
+
+/* Body and Background */
+body {
+  background: linear-gradient(130deg, #0D1936 50%, #dc8929 50%) !important;
+  color: var(--text);
+}
+
+.custom-dropdown-bg {
+  background-color: #136f63 !important; /* dark background */
+}
+.custom-dropdown-bg .dropdown-item {
+  color: #fdf0d5 !important; /* yellow text */
+}
+.custom-dropdown-bg .dropdown-item:hover, 
+.custom-dropdown-bg .dropdown-item:focus {
+  background-color: #343a40 !important; /* slightly lighter on hover */
+  color: #fff !important;
+}
+
+
+#carouselExampleCaptions {
+  max-width: 90%;   /* Set your desired width */
+  margin: 40px auto;  /* Center the carousel */
+  height: 900px;      /* Set your desired height */
+  border-radius: 14px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item,
+#carouselExampleCaptions img {
+  height: 900px; 
+     /* Match the height above */
+}
+#carouselExampleCaptions img {
+  object-fit: cover;  /* Ensures images cover the area */
+  width: 100%;
+  margin-top: 60px; /* Space from the top */
+  border-radius: 14px; /* Rounded corners */
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  
+}
+/* Navbar */
+
+.navbar-glass {
+     background: rgba(40, 40, 40, 0.82);
+     backdrop-filter: blur(8px);
+     box-shadow: 0 3px 10px #fdf0d5;
+     border-bottom: 1px solid #ffb300;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+ }
+.navbar-brand,
+.nav-link {
+  color: var(--accent) !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+.navbar-toggler {
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+/* Buttons */
+.btn-primary {
+  background: var(--primary);
+  border: none;
+}
+.btn-primary:hover {
+  background: var(--accent);
+  color: var(--background);
+}
+.btn-outline-warning {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn-outline-warning:hover {
+  background: var(--accent);
+  color: var(--background);
+}
+/* Custom color for "Our prices" section cards */
+#our-category .card {
+  background:  #136f63;   /* Light glass effect */
+  color: #fdf0d5;
+  border: 2px solid rgba(0, 236, 110, 0.5); /* Semi-transparent border */
+  box-shadow: 0 4px 24px rgba(255, 179, 0, 0.10);
+  border-radius: 14px;
+  backdrop-filter: blur(2px);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+#our-category .card:hover {
+  background: #fdf0d5; /* Darker glass effect */
+  color: #136f63;
+  box-shadow: 0 8px 32px rgba(255, 179, 0, 0.18);
+}
+#our-services .bd-placeholder-img {
+    width: 230px !important;
+    height: 250px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f8f9fa;
+    display: block;
+  }
+/* Cards */
+.card {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--primary);
+}
+.card-header {
+  background: var(--primary);
+  color: var(--text);
+}
+.card-title {
+  color: var(--accent);
+}
+
+/* Section Headings */
+.display-4,
+h1, h3, h4, h5 {
+  color: var(--accent);
+}
+
+/* Muted Text */
+.text-light, .form-text, .form-label {
+  color: var(--text-muted) !important;
+}
+
+/* Footer */
+footer {
+  background: rgba(19, 111, 99, 1);
+     background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+}
+footer a {
+  color: var(--primary);
+}
+footer a:hover {
+  color: var(--accent);
+}
+ 
+
+    footer img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    .social-icons a {
+  margin: 0 10px;
+  color: #00c3ff;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #dc8929;
+}
+
+@media only screen and (max-width: 564px) {
+  #carouselExampleCaptions {
+    height: 600px; /* Adjust height for smaller screens */
+  }
+  #carouselExampleCaptions img {
+    height: 600px; /* Match the height above */
+  }
+}
+#our-services .bd-placeholder-img {
+    width: 230px !important;
+    height: 250px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f8f9fa;
+    display: block;
+}
